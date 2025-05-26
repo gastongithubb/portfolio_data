@@ -1,6 +1,8 @@
 // src/types/global.d.ts
+declare namespace lucide {
+  function createIcons(options?: any): void;
+}
+
 interface Window {
-  lucide?: {
-    createIcons: (options?: any) => void;
-  };
+  lucide?: typeof lucide;
 }

@@ -1,0 +1,43 @@
+---
+import SectionHeader from '../ui/SectionHeader.astro';
+import ProjectCard from '../ui/ProjectCard.astro';
+---
+
+<section id="projects">
+    <div class="container">
+        <SectionHeader 
+            title="Proyectos Destacados"
+            subtitle="Casos de uso reales donde los datos generaron valor de negocio"
+            gradientWord="Proyectos"
+        />
+        
+        <div class="projects-grid">
+            <ProjectCard 
+                icon="trending-up"
+                title="Análisis Predictivo de Ventas"
+                description="Modelo de machine learning que predice ventas futuras con 94% de precisión, optimizando inventario y recursos."
+                tags={['Python', 'Scikit-learn', 'Tableau']}
+                demoLink="#"
+                codeLink="#"
+            />
+
+            <ProjectCard 
+                icon="dashboard"
+                title="Dashboard de KPIs Ejecutivos"
+                description="Dashboard interactivo en tiempo real que centraliza métricas clave de negocio, reduciendo tiempo de análisis en 70%."
+                tags={['Power BI', 'SQL', 'Azure']}
+                demoLink="#"
+                codeLink="#"
+            />
+
+            <ProjectCard 
+                icon="target"
+                title="Segmentación de Clientes"
+                description="Análisis de clustering que identificó 5 segmentos de clientes únicos, mejorando las campañas de marketing en 45%."
+                tags={['R', 'K-means', 'ggplot2']}
+                demoLink="#"
+                codeLink="#"
+            />
+        </div>
+    </div>
+</section>

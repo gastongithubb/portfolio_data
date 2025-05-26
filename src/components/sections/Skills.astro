@@ -1,0 +1,44 @@
+---
+import SectionHeader from '../ui/SectionHeader.astro';
+import SkillCard from '../ui/SkillCard.astro';
+---
+
+<section id="skills">
+    <div class="container">
+        <SectionHeader 
+            title="Habilidades Técnicas"
+            subtitle="Dominio completo del stack de análisis de datos moderno"
+            gradientWord="Habilidades"
+        />
+        
+        <div class="skills-grid">
+            <SkillCard 
+                icon="database"
+                title="Bases de Datos"
+                description="Diseño, consulta y optimización de bases de datos relacionales y NoSQL"
+                tags={['PostgreSQL', 'MySQL', 'MongoDB']}
+            />
+            
+            <SkillCard 
+                icon="code"
+                title="Programación"
+                description="Desarrollo de scripts y aplicaciones para análisis de datos"
+                tags={['Python', 'R', 'SQL']}
+            />
+            
+            <SkillCard 
+                icon="bar-chart"
+                title="Visualización"
+                description="Creación de dashboards interactivos y reportes ejecutivos"
+                tags={['Tableau', 'Power BI', 'Plotly']}
+            />
+            
+            <SkillCard 
+                icon="brain"
+                title="Machine Learning"
+                description="Modelos predictivos y algoritmos de aprendizaje automático"
+                tags={['Scikit-learn', 'TensorFlow', 'XGBoost']}
+            />
+        </div>
+    </div>
+</section>

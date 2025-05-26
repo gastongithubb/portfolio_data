@@ -1,0 +1,11 @@
+---
+const { icon = "skull", title, value } = Astro.props;
+---
+
+<div class="contact-item">
+    <i data-lucide={icon} class="w-8 h-8 text-accent-primary"></i>
+    <div>
+        <h3 class="text-lg font-semibold">{title}</h3>
+        <p style="color: var(--text-secondary)">{value}</p>
+    </div>
+</div>

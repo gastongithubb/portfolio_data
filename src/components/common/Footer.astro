@@ -1,0 +1,29 @@
+---
+import { Github } from '@lucide/astro';
+import { Linkedin } from '@lucide/astro';
+import { Twitter } from '@lucide/astro';
+import { Mail } from '@lucide/astro';
+---
+<div class="py-12 border-t border-color" style="background: var(--bg-secondary)">
+    <div class="container">
+        <div class="text-center">
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="#" class="text-secondary hover:text-accent-primary transition-colors">
+                    <Github class="w-6 h-6"/>
+                </a>
+                <a href="#" class="text-secondary hover:text-accent-primary transition-colors">
+                    <Linkedin class="w-6 h-6"/>
+                </a>
+                <a href="#" class="text-secondary hover:text-accent-primary transition-colors">
+                    <Twitter class="w-6 h-6"/>
+                </a>
+                <a href="#" class="text-secondary hover:text-accent-primary transition-colors">
+                    <Mail class="w-6 h-6"/>
+                </a>
+            </div>
+            <p class="text-secondary">
+                © {new Date().getFullYear()} Portfolio de Analista de Datos. Todos los derechos reservados.
+            </p>
+        </div>
+    </div>
+</div>

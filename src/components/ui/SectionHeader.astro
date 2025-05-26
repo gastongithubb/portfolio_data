@@ -1,0 +1,12 @@
+---
+const { title, subtitle, gradientWord } = Astro.props;
+---
+
+<div class="section-header">
+    <h2 class="section-title">
+        <span class="gradient-text">{gradientWord}</span> {title.replace(gradientWord, '')}
+    </h2>
+    <p class="section-subtitle">
+        {subtitle}
+    </p>
+</div>

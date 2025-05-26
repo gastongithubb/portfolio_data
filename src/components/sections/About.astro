@@ -1,0 +1,63 @@
+---
+import SectionHeader from '../ui/SectionHeader.astro';
+import TechTag from '../ui/TechTag.astro';
+import { Target } from '@lucide/astro';
+import { CheckCircle } from '@lucide/astro';
+---
+
+<section id="about">
+    <div class="container">
+        <SectionHeader 
+            title="Sobre mí"
+            subtitle="Conoce mi experiencia y metodología de trabajo"
+            gradientWord="Sobre"
+        />
+        
+        <div class="grid-cols-2 items-center">
+            <div class="animate-slide-in-left">
+                <p class="text-lg mb-6 leading-relaxed">
+                    Soy un analista de datos apasionado por descubrir patrones ocultos y contar historias a través de los números. 
+                    Con más de 3 años de experiencia, he ayudado a empresas de diferentes sectores a tomar decisiones estratégicas basadas en datos.
+                </p>
+                <p class="text-lg mb-8 leading-relaxed">
+                    Mi enfoque combina rigor técnico con pensamiento creativo, utilizando herramientas avanzadas como Python, R, SQL y 
+                    plataformas de visualización para entregar soluciones que realmente impacten en el negocio.
+                </p>
+                <div class="flex flex-wrap gap-3">
+                    <TechTag>Python</TechTag>
+                    <TechTag>Machine Learning</TechTag>
+                    <TechTag>SQL</TechTag>
+                    <TechTag>Tableau</TechTag>
+                    <TechTag>R</TechTag>
+                </div>
+            </div>
+            
+            <div class="animate-slide-in-right">
+                <div class="glass p-8">
+                    <div class="text-center mb-6">
+                        <Target class="w-16 h-16 mx-auto mb-4 text-accent-primary"/>
+                        <h3 class="text-2xl font-bold mb-4">Mi Metodología</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <CheckCircle class="w-5 h-5 text-accent-primary mt-1 flex-shrink-0"/>
+                            <span><strong>Exploración:</strong> Análisis profundo de patrones y tendencias</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <CheckCircle class="w-5 h-5 text-accent-primary mt-1 flex-shrink-0"/>
+                            <span><strong>Modelado:</strong> Construcción de modelos predictivos robustos</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <CheckCircle class="w-5 h-5 text-accent-primary mt-1 flex-shrink-0"/>
+                            <span><strong>Visualización:</strong> Dashboards claros e impactantes</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <CheckCircle class="w-5 h-5 text-accent-primary mt-1 flex-shrink-0"/>
+                            <span><strong>Acción:</strong> Insights que generan resultados medibles</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

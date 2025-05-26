@@ -1,10 +1,11 @@
 {
   "extends": "astro/tsconfigs/strict",
-  "include": [".astro/types.d.ts", "**/*", "src/**/*"],
-  "exclude": ["dist"],
+  "include": [".astro/types.d.ts", "src/**/*"],
+  "exclude": ["dist", "**/*.astro.ts"],
   "compilerOptions": {
     "lib": ["dom", "esnext"],
     "types": [],
-    "typeRoots": ["./node_modules/@types", "./src/types"]
-  },
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "skipLibCheck": true
+  }
 }

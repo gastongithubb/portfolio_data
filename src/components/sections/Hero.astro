@@ -1,0 +1,55 @@
+---
+import Button from '../ui/Button.astro';
+import { Database } from '@lucide/astro';
+import { BarChart } from '@lucide/astro';
+import { BrainCircuit } from '@lucide/astro';
+import { TrendingUp } from '@lucide/astro';
+import { User } from '@lucide/astro';
+---
+
+<section id="inicio">
+    <div class="container">
+        <div class="hero-container animate-fade-in-up">
+            <div class="hero-content">
+                <h1>
+                    <span class="gradient-text">Analista</span><br>
+                    <span>de Datos</span>
+                </h1>
+                <p>
+                    Transformo datos complejos en insights estratégicos que impulsan el crecimiento empresarial. 
+                    Especializado en análisis predictivo, visualización de datos y machine learning.
+                </p>
+                <div class="btn-group">
+                    <Button href="#projects" icon="folder">
+                        Ver Proyectos
+                    </Button>
+                    <Button href="#contact" variant="outline" icon="mail">
+                        Contactar
+                    </Button>
+                </div>
+            </div>
+            
+            <div class="hero-photo">
+                <div class="floating-icon">
+                    <Database class="w-6 h-6"/>
+                </div>
+                <div class="floating-icon">
+                    <BarChart class="w-6 h-6"/>
+                </div>
+                <div class="floating-icon">
+                    <BrainCircuit class="w-6 h-6"/>
+                </div>
+                <div class="floating-icon">
+                    <TrendingUp class="w-6 h-6"/>
+                </div>
+                
+                <div class="photo-container">
+                    <div class="profile-photo photo-placeholder">
+                        <User class="w-16 h-16 mb-2"/>
+                        <span>Tu Foto Aquí</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

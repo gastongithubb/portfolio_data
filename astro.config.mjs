@@ -1,15 +1,12 @@
 import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://tu-dominio.com', // cambia por tu dominio
+  site: 'https://portfolio-data-xi.vercel.app/',
   integrations: [
-    tailwind(),
-    sitemap()
+    sitemap(),
   ],
   image: {
-    // Configuración nativa de imágenes en Astro 5
     domains: ['github.com', 'raw.githubusercontent.com']
   }
 });

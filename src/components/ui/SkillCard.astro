@@ -1,0 +1,16 @@
+---
+import TechTag from "./TechTag.astro";
+
+const { icon, title, description, tags } = Astro.props;
+---
+
+<div class="skill-card">
+    <i data-lucide={icon} class="skill-icon"></i>
+    <h3 class="text-xl font-bold mb-3">{title}</h3>
+    <p class="text-secondary mb-4">{description}</p>
+    <div class="flex flex-wrap gap-2 justify-center">
+        {tags.map((tag: unknown) => (
+            <TechTag>{tag}</TechTag>
+        ))}
+    </div>
+</div>

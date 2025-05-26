@@ -1,0 +1,71 @@
+---
+import SectionHeader from '../ui/SectionHeader.astro';
+import ContactItem from '../ui/ContactItem.astro';
+import Button from '../ui/Button.astro';
+---
+
+<section id="contact">
+    <div class="container">
+        <SectionHeader 
+            title="Conectemos"
+            subtitle="¿Tienes un proyecto de datos interesante? Me encantaría colaborar contigo"
+            gradientWord="Conectemos"
+        />
+        
+        <div class="contact-grid">
+            <div class="contact-info animate-slide-in-left">
+                <ContactItem 
+                    icon="mail"
+                    title="Email"
+                    value="gastonalvarez18@outlook.com"
+                />
+                
+                <ContactItem 
+                    icon="linkedin"
+                    title="LinkedIn"
+                    value="www.linkedin.com/in/gastonalvarez-end"
+                />
+                
+                <ContactItem 
+                    icon="github"
+                    title="GitHub"
+                    value="https://github.com/gastongithubb"
+                />
+                
+                <ContactItem 
+                    icon="map-pin"
+                    title="Ubicación"
+                    value="Cordoba, Argentina"
+                />
+            </div>
+            
+            <div class="animate-slide-in-right">
+                <form class="glass p-8">
+                    <div class="form-group">
+                        <label class="form-label">Nombre</label>
+                        <input type="text" class="form-input" placeholder="Tu nombre completo">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-input" placeholder="tu@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Asunto</label>
+                        <input type="text" class="form-input" placeholder="¿En qué puedo ayudarte?">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Mensaje</label>
+                        <textarea class="form-input" rows="5" placeholder="Cuéntame sobre tu proyecto..."></textarea>
+                    </div>
+                    
+                    <Button type="submit" icon="send" class="w-full">
+                        Enviar Mensaje
+                    </Button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

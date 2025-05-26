@@ -1,0 +1,23 @@
+---
+  import { Menu } from '@lucide/astro';
+const links = [
+  { href: "#inicio", text: "Inicio" },
+  { href: "#about", text: "Sobre mí" },
+  { href: "#skills", text: "Habilidades" },
+  { href: "#projects", text: "Proyectos" },
+  { href: "#contact", text: "Contacto" },
+];
+---
+
+<nav class="nav-container">
+    <div class="nav-content">
+        <div class="flex items-center space-x-2">
+            {links.map(link => (
+                <a href={link.href} class="nav-link">{link.text}</a>
+            ))}
+        </div>
+        <button id="menuBtn" class="menu-btn">
+            <Menu class="w-6 h-6"></i>
+        </button>
+    </div>
+</nav>
